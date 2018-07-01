@@ -33,7 +33,9 @@
 /* Systems using glibc: xlocale.h has been removed from glibc 2.26
    The above include of locale.h is sufficient
    Further details: https://sourceware.org/git/?p=glibc.git;a=commit;h=f0be25b6336db7492e47d2e8e72eb8af53b5506d */
-#include <xlocale.h>
+// Further details: https://github.com/Microsoft/cpprestsdk/issues/485
+//#include <xlocale.h>
+#include <bits/types/__locale_t.h>
 #endif
 #endif
 
